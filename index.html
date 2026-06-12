@@ -479,6 +479,25 @@
       display: inline-block;
       width: 100%;
     }
+
+    .avatar-container {
+      flex: 0 0 120px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-icon-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      /* Dinamik tema uyumlu halka */
+      border: 3px solid var(--border-accent);
+      object-fit: cover;
+    }
+  </style>
   </style>
 </head>
 
@@ -500,10 +519,9 @@
         <span>whoami --identity</span>
       </div>
       <div class="about-grid">
-        <div class="avatar-placeholder"
-          style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 150px; height: 150px; border-radius: 12px; border: 2px solid #0f1722; background-color: #0f1722; padding: 10px;">
-          <img src="image.png" alt="root@msec avatar icon" style="width: 80px; height: 80px; border-radius: 50%;">
-          <div style="font-size: 0.7rem; margin-top: 8px;">[root@msec]</div>
+        <div class="avatar-container">
+          <img src="image.png" alt="root@msec avatar icon" class="avatar-icon-img">
+          <div style="font-size: 0.7rem; margin-top: 8px; color: var(--text-muted);">[root@msec]</div>
         </div>
         <div class="about-text">
           <p>Merhaba, ben <strong class="highlight">Mehmet</strong> (Cyber alias: <span class="highlight">MSEC</span>).
