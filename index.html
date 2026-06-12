@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr" data-theme="matrix">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -81,10 +82,12 @@
     ::-webkit-scrollbar {
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: #0f1722;
       border-left: 1px solid var(--border-color);
     }
+
     ::-webkit-scrollbar-thumb {
       background: var(--border-color);
       border-radius: 4px;
@@ -102,6 +105,7 @@
       justify-content: flex-end;
       margin-bottom: 1rem;
     }
+
     .theme-selector-btn {
       background: var(--item-bg);
       color: var(--text-main);
@@ -113,6 +117,7 @@
       font-size: 0.85rem;
       transition: all 0.2s ease;
     }
+
     .theme-selector-btn:hover {
       border-color: var(--border-accent);
     }
@@ -126,6 +131,7 @@
       width: 100%;
       padding-bottom: 1rem;
     }
+
     h1 {
       font-size: 2.8rem;
       letter-spacing: 4px;
@@ -134,6 +140,7 @@
       text-shadow: 0 0 6px var(--border-accent);
       word-break: break-word;
     }
+
     .tagline {
       font-family: monospace;
       color: var(--text-muted);
@@ -156,6 +163,7 @@
       transition: 0.2s ease-in-out;
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
     }
+
     .card:hover {
       border-color: var(--border-accent);
     }
@@ -170,6 +178,7 @@
       border-left: 5px solid var(--border-accent);
       padding-left: 1.2rem;
     }
+
     .icon-badge {
       font-size: 1.3rem;
     }
@@ -181,10 +190,12 @@
       gap: 2rem;
       align-items: center;
     }
+
     .avatar-placeholder {
       flex: 0 0 120px;
       text-align: center;
     }
+
     .avatar-icon {
       font-size: 3rem;
       background: var(--item-bg);
@@ -197,17 +208,21 @@
       align-items: center;
       justify-content: center;
     }
+
     .about-text {
       flex: 1;
     }
+
     .about-text p {
       margin-bottom: 1rem;
       font-size: 1.05rem;
     }
+
     .highlight {
       color: var(--text-highlight);
       font-weight: bold;
     }
+
     .cyber-tag {
       display: inline-block;
       background: var(--badge-bg);
@@ -221,24 +236,31 @@
     }
 
     /* sertifika grid + writeup grid */
-    .certs-grid, .writeup-grid {
+    .certs-grid,
+    .writeup-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 1.8rem;
     }
-    .cert-item, .writeup-item {
+
+    .cert-item,
+    .writeup-item {
       background: var(--item-bg);
       border-radius: 20px;
       padding: 1.4rem;
       border-left: 6px solid var(--border-accent);
       transition: all 0.2s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
-    .cert-item:hover, .writeup-item:hover {
+
+    .cert-item:hover,
+    .writeup-item:hover {
       transform: translateY(-4px);
       background: var(--item-hover);
     }
-    .cert-name, .writeup-name {
+
+    .cert-name,
+    .writeup-name {
       font-size: 1.4rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
@@ -247,13 +269,16 @@
       align-items: center;
       flex-wrap: wrap;
     }
+
     .cert-issuer {
       font-size: 0.85rem;
       color: var(--text-muted);
       margin-bottom: 0.8rem;
       letter-spacing: -0.2px;
     }
-    .cert-date, .writeup-meta {
+
+    .cert-date,
+    .writeup-meta {
       font-size: 0.7rem;
       font-family: monospace;
       background: var(--badge-bg);
@@ -263,6 +288,7 @@
       border-radius: 30px;
       color: var(--text-main);
     }
+
     .difficulty {
       display: inline-block;
       padding: 0.2rem 0.7rem;
@@ -271,16 +297,29 @@
       font-weight: bold;
       margin-left: 0.5rem;
     }
-    .difficulty.easy { background: #166534; color: #bef264; }
-    .difficulty.medium { background: #854d0e; color: #fde047; }
-    .difficulty.hard { background: #7f1d1d; color: #fecaca; }
-    
+
+    .difficulty.easy {
+      background: #166534;
+      color: #bef264;
+    }
+
+    .difficulty.medium {
+      background: #854d0e;
+      color: #fde047;
+    }
+
+    .difficulty.hard {
+      background: #7f1d1d;
+      color: #fecaca;
+    }
+
     .writeup-tech {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin: 12px 0 8px;
     }
+
     .tech-badge {
       background: var(--badge-bg);
       border: 1px solid var(--badge-border);
@@ -290,6 +329,7 @@
       font-family: monospace;
       color: var(--text-main);
     }
+
     .writeup-link {
       margin-top: 12px;
       display: inline-flex;
@@ -305,6 +345,7 @@
       color: var(--text-main);
       text-decoration: none;
     }
+
     .writeup-link:hover {
       background: var(--border-accent);
       color: var(--card-bg);
@@ -316,6 +357,7 @@
       flex-direction: column;
       gap: 1.2rem;
     }
+
     .project-item {
       background: var(--item-bg);
       border-radius: 20px;
@@ -323,18 +365,22 @@
       border-right: 3px solid var(--border-accent);
       transition: 0.2s;
     }
+
     .project-item:hover {
       background: var(--item-hover);
     }
+
     .project-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: var(--text-main);
     }
+
     a {
       text-decoration: none;
       color: inherit;
     }
+
     .project-title a:hover {
       color: var(--border-accent);
     }
@@ -346,6 +392,7 @@
       gap: 0.7rem;
       margin-top: 1rem;
     }
+
     .skill-badge {
       background: var(--badge-bg);
       padding: 0.3rem 1rem;
@@ -364,6 +411,7 @@
       align-items: center;
       margin-top: 0.8rem;
     }
+
     .social-card {
       background: var(--item-bg);
       border-radius: 60px;
@@ -378,6 +426,7 @@
       border: 1px solid var(--border-color);
       font-size: 1rem;
     }
+
     .social-card:hover {
       border-color: var(--border-accent);
       background: var(--item-hover);
@@ -393,12 +442,32 @@
     }
 
     @media (max-width: 680px) {
-      body { padding: 1.2rem; }
-      .card { padding: 1.3rem; }
-      h1 { font-size: 2rem; }
-      .section-title { font-size: 1.4rem; }
-      .avatar-icon { width: 90px; height: 90px; font-size: 2.2rem; }
-      .social-card { padding: 0.5rem 1.2rem; font-size: 0.8rem; }
+      body {
+        padding: 1.2rem;
+      }
+
+      .card {
+        padding: 1.3rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .avatar-icon {
+        width: 90px;
+        height: 90px;
+        font-size: 2.2rem;
+      }
+
+      .social-card {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+      }
     }
 
     .note-placeholder {
@@ -412,338 +481,359 @@
     }
   </style>
 </head>
+
 <body>
-<div class="container">
-  
-  <div class="controls-wrapper">
-    <button class="theme-selector-btn" id="themeBtn" onclick="cycleTheme()">Tema: Matrix</button>
+  <div class="container">
+
+    <div class="controls-wrapper">
+      <button class="theme-selector-btn" id="themeBtn" onclick="cycleTheme()">Tema: Matrix</button>
+    </div>
+
+    <div class="glitch-header">
+      <h1>// MSEC::Mehmet</h1>
+      <div class="tagline"># RedTeam | # Linux / Windows System Admin </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>whoami --identity</span>
+      </div>
+      <div class="about-grid">
+        <div class="avatar-placeholder"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 150px; height: 150px; border-radius: 12px; border: 2px solid #0f1722; background-color: #0f1722; padding: 10px;">
+          <img src="image.png" alt="root@msec avatar icon" style="width: 80px; height: 80px; border-radius: 50%;">
+          <div style="font-size: 0.7rem; margin-top: 8px;">[root@msec]</div>
+        </div>
+        <div class="about-text">
+          <p>Merhaba, ben <strong class="highlight">Mehmet</strong> (Cyber alias: <span class="highlight">MSEC</span>).
+            Bilgisayar Mühendisliği mezunuyum. Aktif olarak <strong>siber güvenlik ve sistem yönetimi</strong>
+            alanlarında çalışıyorum.</p>
+          <p>🔐 <strong>Odak Alanlarım:</strong> Penetrasyon testi, WAF (ModSecurity), honeypot (Portspoof),
+            Linux/Windows güvenliği, Docker/K8s, ve güvenlik araçları (Metasploit, Burp Suite, Sqlmap, Nuclei, Nessus,
+            Acunetix ...).</p>
+          <div>
+            <span class="cyber-tag">#PenetrationTesting</span>
+            <span class="cyber-tag">#DockerCompose</span>
+            <span class="cyber-tag">#WAF</span>
+            <span class="cyber-tag">#SystemAdministrator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>./projects --show-all</span>
+      </div>
+      <div class="project-list">
+        <div class="project-item">
+          <div class="project-title">
+            <a href="https://github.com/BM-Mehmet/iamsecure" target="_blank" rel="noopener">iamsecure (docker
+              compose)</a>
+          </div>
+          <div style="font-size:0.9rem; margin-top: 5px;">OWASP ModSecurity WAF + Portspoof aracı ile honeypot kurulumu.
+            Gerçek zamanlı saldırı tespiti ve yanıltma sistemi.</div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
+            <a href="https://github.com/BM-Mehmet/iamnotsecure" target="_blank" rel="noopener">iamnotsecure (docker
+              compose)</a>
+          </div>
+          <div style="font-size:0.9rem; margin-top: 5px;">Yaygın güvenlik açıkları içeren pentest lab ortamı kurulumu,
+            sömürülmesi ve dökümantasyonu. Eğitim amaçlı zafiyetli container yapısı.</div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
+            <a href="https://github.com/BM-Mehmet/my-pamkit" target="_blank" rel="noopener">My-Pamkit</a>
+          </div>
+          <div style="font-size:0.9rem; margin-top: 5px;">Linux PAM modülünü manipüle ederek ek bir kimlik doğrulama
+            katmanı (backdoor mekanizması değil, çok faktörlü konsept) geliştirme.</div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">Açık kaynak katkıları</div>
+          <div style="font-size:0.9rem; margin-top: 5px;">Tüm projeler
+            <span class="highlight">
+              <a href="https://github.com/BM-Mehmet" target="_blank" rel="noopener">github.com/BM-Mehmet</a>
+            </span> adresinde paylaşılmaktadır. Docker, güvenlik araçları ve otomasyon scriptleri.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>skillset --enumerate</span>
+      </div>
+      <div class="skills-cloud">
+        <span class="skill-badge">Git/GitHub</span>
+        <span class="skill-badge">Linux (Desktop/Server)</span>
+        <span class="skill-badge">Apache/Nginx</span>
+        <span class="skill-badge">Docker / Docker-Compose</span>
+        <span class="skill-badge">Podman / K8s</span>
+        <span class="skill-badge">Metasploit / Burp Suite</span>
+        <span class="skill-badge">Sqlmap / Nmap / Nuclei</span>
+        <span class="skill-badge">ModSecurity WAF</span>
+        <span class="skill-badge">Windows Server / AD / Hyper-V</span>
+        <span class="skill-badge">VMware ESXI</span>
+        <span class="skill-badge">Veeam Backup</span>
+        <span class="skill-badge">Raid Yapılandırma</span>
+        <span class="skill-badge">Packet Tracer (VLAN/Router)</span>
+        <span class="skill-badge">Google Cloud / Azure</span>
+        <span class="skill-badge">Redis, MySQL, PostgreSQL</span>
+        <span class="skill-badge">Filezilla / Putty</span>
+        <span class="skill-badge">AnyDesk / RustDesk</span>
+        <span class="skill-badge">VPN Kurulum & Yönetim</span>
+        <span class="skill-badge">VS Code</span>
+      </div>
+      <div style="margin-top: 1rem; border-left: 2px solid var(--border-color); padding-left: 1rem; font-size:0.8rem;">
+        🌐 İngilizce – B1 (teknik döküman okuyup anlama, hata çözümleme)
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>ls -l /certs/ --secured</span>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-item">
+          <div class="cert-name">Siber Vatan 2023</div>
+          <div class="cert-issuer">Siber Vatan Programı</div>
+          <div class="cert-date">📅 2023</div>
+          <div style="margin-top: 8px; font-size:0.8rem;">Temel Linux, Web güvenliği, Siber tehdit istihbaratı</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Siber Vatan 2025</div>
+          <div class="cert-issuer">Siber Vatan Programı</div>
+          <div class="cert-date">📅 2025</div>
+          <div style="margin-top: 8px; font-size:0.8rem;">Linux, Web güvenliği, Zararlı yazılım analizi, Tehdit
+            istihbaratı</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">CAPT</div>
+          <div class="cert-issuer">Hackviser</div>
+          <div class="cert-date">📅 2024</div>
+          <div style="margin-top: 8px; font-size:0.8rem;">Certified Associate Penetration Tester</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">CWSE</div>
+          <div class="cert-issuer">Hackviser</div>
+          <div class="cert-date">📅 2025</div>
+          <div style="margin-top: 8px; font-size:0.8rem;">Certified Web Security Expert</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>cat /writeups/ --walkthroughs</span>
+      </div>
+
+      <div class="writeup-grid">
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            HTB-CAP
+            <span class="difficulty easy">EASY</span>
+          </div>
+          <div class="writeup-meta">linux</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Nmap</span>
+            <span class="tech-badge">Wireshark</span>
+            <span class="tech-badge">Web</span>
+            <span class="tech-badge">Privilege Escalation</span>
+          </div>
+          <a href="https://bm-mehmet.medium.com/htb-cap-writeup-5c83e3c426a3" class="writeup-link htb-link">📖 Read
+            Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            HTB-Reactor
+            <span class="difficulty easy">EASY</span>
+          </div>
+          <div class="writeup-meta">linux</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Nmap</span>
+            <span class="tech-badge">React2shell</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Web</span>
+            <span class="tech-badge">Privilege Escalation</span>
+          </div>
+          <a href="https://bm-mehmet.medium.com/htb-react-46e15e84c0c0" class="writeup-link htb-link">📖 Read Writeup
+            →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            PortSwigger - SQL Injection Labları 1-10
+          </div>
+          <div class="writeup-meta">web</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Burp Suite</span>
+            <span class="tech-badge">SQL Injection</span>
+            <span class="tech-badge">Web Exploitation</span>
+            <span class="tech-badge">Database</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/port-swigger-sqli-2763879bf100" class="writeup-link htb-link">📖 Read
+            Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            PortSwigger - SQL Injection Labları 11-18
+          </div>
+          <div class="writeup-meta">web</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Burp Suite</span>
+            <span class="tech-badge">SQL Injection</span>
+            <span class="tech-badge">Web Exploitation</span>
+            <span class="tech-badge">Database</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/port-swigger-sqli-11-14-883186424a82" class="writeup-link htb-link">📖
+            Read Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            PortSwigger - XSS Labları 1-10
+          </div>
+          <div class="writeup-meta">web</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Burp Suite</span>
+            <span class="tech-badge">XSS</span>
+            <span class="tech-badge">Web Exploitation</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/port-swigger-xss-1-10-1985be9aef28" class="writeup-link htb-link">📖
+            Read Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            PortSwigger - XSS Labları 11-20
+          </div>
+          <div class="writeup-meta">web</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Burp Suite</span>
+            <span class="tech-badge">XSS</span>
+            <span class="tech-badge">Web Exploitation</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/port-swigger-xss-11-20-af2b3d1eab00" class="writeup-link htb-link">📖
+            Read Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            PortSwigger - XSS Labları 21-30
+          </div>
+          <div class="writeup-meta">web</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">Burp Suite</span>
+            <span class="tech-badge">XSS</span>
+            <span class="tech-badge">Web Exploitation</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/port-swigger-xss-21-30-ff3bdd5fdb10" class="writeup-link htb-link">📖
+            Read Writeup →</a>
+        </div>
+
+        <div class="writeup-item">
+          <div class="writeup-name">
+            CLR (Common Language Runtime) - Windows Privilege Escalation
+          </div>
+          <div class="writeup-meta">Windows Server</div>
+          <div class="writeup-tech">
+            <span class="tech-badge">MSSQL</span>
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">dll Injection</span>
+          </div>
+          <a href="https://medium.com/@bm-mehmet/1-clr-nedir-d26cff30da26" class="writeup-link htb-link">📖 Read Writeup
+            →</a>
+        </div>
+
+      </div>
+
+      <div class="note-placeholder">
+        💡 Not: Tüm writeup'lar detaylı çözüm adımları, komutlar ve araç konfigürasyonları ile hazırlanmaktadır.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>cat /etc/accounts.conf</span>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/BM-Mehmet" class="social-card" target="_blank" rel="noopener">
+          GitHub | BM-Mehmet
+        </a>
+        <a href="https://medium.com/@bm-mehmet" class="social-card" target="_blank" rel="noopener">
+          Medium | @bm-mehmet
+        </a>
+        <a href="mailto:Bm-Mehmet@proton.me" class="social-card">
+          Proton Mail | bm-mehmet
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">
+        <span class="icon-badge">&gt;</span>
+        <span>job.target --preferences</span>
+      </div>
+      <p style="margin-bottom: 8px;">Kendimi birçok alanda geliştirdim, geliştirmeye devam ediyorum:</p>
+      <div class="skills-cloud" style="margin-top: 0px;">
+        <span class="skill-badge">🖥️ Sistem Kurulumu & Yönetimi</span>
+        <span class="skill-badge">🛠️ Teknik Destek</span>
+        <span class="skill-badge">🔐 Siber Güvenlik (Blue/Red Team)</span>
+        <span class="skill-badge">🐳 Konteyner Güvenliği</span>
+        <span class="skill-badge">🌐 WAF & Honeypot</span>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <span>✦ exploit( ) • defend( ) • innovate( ) ✦</span><br>
+      <a href="https://bm-mehmet.github.io/msec/" target="_blank" rel="noopener">v2.0 | “Her gün yeni bir güvenlik
+        açığı, her gün yeni bir öğrenme fırsatı.”</a>
+    </div>
   </div>
 
-  <div class="glitch-header">
-    <h1>// MSEC::Mehmet</h1>
-    <div class="tagline"># RedTeam | # Linux / Windows System Admin </div>
-  </div>
+  <script>
+    // Tanımlı temaların dizi listesi
+    const themes = ["matrix", "light", "blue", "dracula"];
+    const themeNames = {
+      "matrix": "Tema: Matrix",
+      "light": "Tema: Klasik Açık",
+      "blue": "Tema: Derin Mavi",
+      "dracula": "Tema: Dracula"
+    };
 
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span> 
-      <span>whoami --identity</span>
-    </div>
-    <div class="about-grid">
-      <div class="avatar-placeholder">
-        <div class="avatar-icon">⚙️</div>
-        <div style="font-size: 0.7rem; margin-top: 8px;">[root@msec]</div>
-      </div>
-      <div class="about-text">
-        <p>Merhaba, ben <strong class="highlight">Mehmet</strong> (Cyber alias: <span class="highlight">MSEC</span>).  
-        Bilgisayar Mühendisliği mezunuyum. Aktif olarak <strong>siber güvenlik ve sistem yönetimi</strong> alanlarında çalışıyorum.</p>
-        <p>🔐 <strong>Odak Alanlarım:</strong> Penetrasyon testi, WAF (ModSecurity), honeypot (Portspoof), Linux/Windows güvenliği, Docker/K8s, ve güvenlik araçları (Metasploit, Burp Suite, Sqlmap, Nuclei, Nessus, Acunetix ...).</p>
-        <div>
-          <span class="cyber-tag">#PenetrationTesting</span>
-          <span class="cyber-tag">#DockerCompose</span>
-          <span class="cyber-tag">#WAF</span>
-          <span class="cyber-tag">#SystemAdministrator</span>
-        </div>
-      </div>
-    </div>
-  </div>
+    function cycleTheme() {
+      const root = document.documentElement;
+      const currentTheme = root.getAttribute('data-theme') || 'matrix';
 
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>./projects --show-all</span>
-    </div>
-    <div class="project-list">
-      <div class="project-item">
-        <div class="project-title">
-          <a href="https://github.com/BM-Mehmet/iamsecure" target="_blank" rel="noopener">iamsecure (docker compose)</a>
-        </div>
-        <div style="font-size:0.9rem; margin-top: 5px;">OWASP ModSecurity WAF + Portspoof aracı ile honeypot kurulumu. Gerçek zamanlı saldırı tespiti ve yanıltma sistemi.</div>
-      </div>
-      <div class="project-item">
-        <div class="project-title">
-          <a href="https://github.com/BM-Mehmet/iamnotsecure" target="_blank" rel="noopener">iamnotsecure (docker compose)</a>
-        </div>
-        <div style="font-size:0.9rem; margin-top: 5px;">Yaygın güvenlik açıkları içeren pentest lab ortamı kurulumu, sömürülmesi ve dökümantasyonu. Eğitim amaçlı zafiyetli container yapısı.</div>
-      </div>
-      <div class="project-item">
-        <div class="project-title">
-          <a href="https://github.com/BM-Mehmet/my-pamkit" target="_blank" rel="noopener">My-Pamkit</a>
-        </div>
-        <div style="font-size:0.9rem; margin-top: 5px;">Linux PAM modülünü manipüle ederek ek bir kimlik doğrulama katmanı (backdoor mekanizması değil, çok faktörlü konsept) geliştirme.</div>
-      </div>
-      <div class="project-item">
-        <div class="project-title">Açık kaynak katkıları</div>
-        <div style="font-size:0.9rem; margin-top: 5px;">Tüm projeler 
-          <span class="highlight">
-            <a href="https://github.com/BM-Mehmet" target="_blank" rel="noopener">github.com/BM-Mehmet</a> 
-          </span> adresinde paylaşılmaktadır. Docker, güvenlik araçları ve otomasyon scriptleri.
-        </div>
-      </div>
-    </div>
-  </div>
+      // Sıradaki temanın indeksini bulma
+      let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+      let nextTheme = themes[nextIndex];
 
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>skillset --enumerate</span>
-    </div>
-    <div class="skills-cloud">
-      <span class="skill-badge">Git/GitHub</span>
-      <span class="skill-badge">Linux (Desktop/Server)</span>
-      <span class="skill-badge">Apache/Nginx</span>
-      <span class="skill-badge">Docker / Docker-Compose</span>
-      <span class="skill-badge">Podman / K8s</span>
-      <span class="skill-badge">Metasploit / Burp Suite</span>
-      <span class="skill-badge">Sqlmap / Nmap / Nuclei</span>
-      <span class="skill-badge">ModSecurity WAF</span>
-      <span class="skill-badge">Windows Server / AD / Hyper-V</span>
-      <span class="skill-badge">VMware ESXI</span>
-      <span class="skill-badge">Veeam Backup</span>
-      <span class="skill-badge">Raid Yapılandırma</span>
-      <span class="skill-badge">Packet Tracer (VLAN/Router)</span>
-      <span class="skill-badge">Google Cloud / Azure</span>
-      <span class="skill-badge">Redis, MySQL, PostgreSQL</span>
-      <span class="skill-badge">Filezilla / Putty</span>
-      <span class="skill-badge">AnyDesk / RustDesk</span>
-      <span class="skill-badge">VPN Kurulum & Yönetim</span>
-      <span class="skill-badge">VS Code</span>
-    </div>
-    <div style="margin-top: 1rem; border-left: 2px solid var(--border-color); padding-left: 1rem; font-size:0.8rem;">
-      🌐 İngilizce – B1 (teknik döküman okuyup anlama, hata çözümleme)
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>ls -l /certs/ --secured</span>
-    </div>
-    <div class="certs-grid">
-      <div class="cert-item">
-        <div class="cert-name">Siber Vatan 2023</div>
-        <div class="cert-issuer">Siber Vatan Programı</div>
-        <div class="cert-date">📅 2023</div>
-        <div style="margin-top: 8px; font-size:0.8rem;">Temel Linux, Web güvenliği, Siber tehdit istihbaratı</div>
-      </div>
-      <div class="cert-item">
-        <div class="cert-name">Siber Vatan 2025</div>
-        <div class="cert-issuer">Siber Vatan Programı</div>
-        <div class="cert-date">📅 2025</div>
-        <div style="margin-top: 8px; font-size:0.8rem;">Linux, Web güvenliği, Zararlı yazılım analizi, Tehdit istihbaratı</div>
-      </div>
-      <div class="cert-item">
-        <div class="cert-name">CAPT</div>
-        <div class="cert-issuer">Hackviser</div>
-        <div class="cert-date">📅 2024</div>
-        <div style="margin-top: 8px; font-size:0.8rem;">Certified Associate Penetration Tester</div>
-      </div>
-      <div class="cert-item">
-        <div class="cert-name">CWSE</div>
-        <div class="cert-issuer">Hackviser</div>
-        <div class="cert-date">📅 2025</div>
-        <div style="margin-top: 8px; font-size:0.8rem;">Certified Web Security Expert</div>
-      </div>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>cat /writeups/ --walkthroughs</span>
-    </div>
-    
-    <div class="writeup-grid">
-      
-      <div class="writeup-item">
-        <div class="writeup-name">
-          HTB-CAP
-          <span class="difficulty easy">EASY</span>
-        </div>
-        <div class="writeup-meta">linux</div>
-        <div class="writeup-tech">
-          <span class="tech-badge">Nmap</span>
-          <span class="tech-badge">Wireshark</span>
-          <span class="tech-badge">Web</span>
-          <span class="tech-badge">Privilege Escalation</span>
-        </div>
-        <a href="https://bm-mehmet.medium.com/htb-cap-writeup-5c83e3c426a3" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          HTB-Reactor
-          <span class="difficulty easy">EASY</span>
-        </div>
-        <div class="writeup-meta">linux</div>
-        <div class="writeup-tech">
-          <span class="tech-badge">Nmap</span>
-          <span class="tech-badge">React2shell</span>
-          <span class="tech-badge">Node.js</span>
-          <span class="tech-badge">Web</span>
-          <span class="tech-badge">Privilege Escalation</span>
-        </div>
-        <a href="https://bm-mehmet.medium.com/htb-react-46e15e84c0c0" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          PortSwigger - SQL Injection Labları 1-10
-        </div>
-        <div class="writeup-meta">web</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">Burp Suite</span>
-          <span class="tech-badge">SQL Injection</span>
-          <span class="tech-badge">Web Exploitation</span>
-          <span class="tech-badge">Database</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/port-swigger-sqli-2763879bf100" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          PortSwigger - SQL Injection Labları 11-18
-        </div>
-        <div class="writeup-meta">web</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">Burp Suite</span>
-          <span class="tech-badge">SQL Injection</span>
-          <span class="tech-badge">Web Exploitation</span>
-          <span class="tech-badge">Database</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/port-swigger-sqli-11-14-883186424a82" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          PortSwigger - XSS Labları 1-10
-        </div>
-        <div class="writeup-meta">web</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">Burp Suite</span>
-          <span class="tech-badge">XSS</span>
-          <span class="tech-badge">Web Exploitation</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/port-swigger-xss-1-10-1985be9aef28" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          PortSwigger - XSS Labları 11-20
-        </div>
-        <div class="writeup-meta">web</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">Burp Suite</span>
-          <span class="tech-badge">XSS</span>
-          <span class="tech-badge">Web Exploitation</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/port-swigger-xss-11-20-af2b3d1eab00" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          PortSwigger - XSS Labları 21-30
-        </div>
-        <div class="writeup-meta">web</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">Burp Suite</span>
-          <span class="tech-badge">XSS</span>
-          <span class="tech-badge">Web Exploitation</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/port-swigger-xss-21-30-ff3bdd5fdb10" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-      <div class="writeup-item">
-        <div class="writeup-name">
-          CLR (Common Language Runtime) - Windows Privilege Escalation
-        </div>
-        <div class="writeup-meta">Windows Server</div> 
-        <div class="writeup-tech">
-          <span class="tech-badge">MSSQL</span>
-          <span class="tech-badge">C#</span>
-          <span class="tech-badge">dll Injection</span>
-        </div>
-        <a href="https://medium.com/@bm-mehmet/1-clr-nedir-d26cff30da26" class="writeup-link htb-link">📖 Read Writeup →</a>
-      </div>
-
-    </div>
-
-    <div class="note-placeholder">
-      💡 Not: Tüm writeup'lar detaylı çözüm adımları, komutlar ve araç konfigürasyonları ile hazırlanmaktadır.
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>cat /etc/accounts.conf</span>
-    </div>
-    <div class="social-links">
-      <a href="https://github.com/BM-Mehmet" class="social-card" target="_blank" rel="noopener">
-        GitHub | BM-Mehmet
-      </a>
-      <a href="https://medium.com/@bm-mehmet" class="social-card" target="_blank" rel="noopener">
-        Medium | @bm-mehmet
-      </a>
-      <a href="mailto:Bm-Mehmet@proton.me" class="social-card">
-        Proton Mail | bm-mehmet
-      </a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="section-title">
-      <span class="icon-badge">&gt;</span>
-      <span>job.target --preferences</span>
-    </div>
-    <p style="margin-bottom: 8px;">Kendimi birçok alanda geliştirdim, geliştirmeye devam ediyorum:</p>
-    <div class="skills-cloud" style="margin-top: 0px;">
-      <span class="skill-badge">🖥️ Sistem Kurulumu & Yönetimi</span>
-      <span class="skill-badge">🛠️ Teknik Destek</span>
-      <span class="skill-badge">🔐 Siber Güvenlik (Blue/Red Team)</span>
-      <span class="skill-badge">🐳 Konteyner Güvenliği</span>
-      <span class="skill-badge">🌐 WAF & Honeypot</span>
-    </div>
-  </div>
-
-  <div class="footer-note">
-    <span>✦ exploit( ) • defend( ) • innovate( ) ✦</span><br>
-    <a href="https://bm-mehmet.github.io/msec/" target="_blank" rel="noopener">v2.0 | “Her gün yeni bir güvenlik açığı, her gün yeni bir öğrenme fırsatı.”</a>
-  </div>
-</div>
-
-<script>
-  // Tanımlı temaların dizi listesi
-  const themes = ["matrix", "light", "blue", "dracula"];
-  const themeNames = {
-    "matrix": "Tema: Matrix",
-    "light": "Tema: Klasik Açık",
-    "blue": "Tema: Derin Mavi",
-    "dracula": "Tema: Dracula"
-  };
-
-  function cycleTheme() {
-    const root = document.documentElement;
-    const currentTheme = root.getAttribute('data-theme') || 'matrix';
-    
-    // Sıradaki temanın indeksini bulma
-    let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
-    let nextTheme = themes[nextIndex];
-    
-    // Temayı uygulama
-    root.setAttribute('data-theme', nextTheme);
-    document.getElementById('themeBtn').textContent = themeNames[nextTheme];
-    localStorage.setItem('selected-theme', nextTheme);
-  }
-
-  // Sayfa yüklendiğinde hafızadaki temayı kontrol etme prosedürü
-  window.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('selected-theme');
-    if (savedTheme && themes.includes(savedTheme)) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      document.getElementById('themeBtn').textContent = themeNames[savedTheme];
+      // Temayı uygulama
+      root.setAttribute('data-theme', nextTheme);
+      document.getElementById('themeBtn').textContent = themeNames[nextTheme];
+      localStorage.setItem('selected-theme', nextTheme);
     }
-  });
-</script>
+
+    // Sayfa yüklendiğinde hafızadaki temayı kontrol etme prosedürü
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('selected-theme');
+      if (savedTheme && themes.includes(savedTheme)) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('themeBtn').textContent = themeNames[savedTheme];
+      }
+    });
+  </script>
 </body>
+
 </html>
